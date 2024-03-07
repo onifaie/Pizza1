@@ -6,7 +6,7 @@ const getpizzalist = async () => {
     const res = await axios.get(
       `${import.meta.env.VITE_BASE_URL}/api/products`
     );
-    console.log(res.data);
+    console.log(res);
 
     return res.data;
   } catch (error) {
