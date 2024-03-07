@@ -4,6 +4,10 @@ import obeid from "../images/pizza1.jpg";
 export default function ProductDeatils() {
   return (
     <div className="container mx-auto items-center justify-center">
+      <h1 className=" text-2xl font-bold items-center">
+        this Page ProductDetails{" "}
+      </h1>
+
       <div className="flex  grid-cols-3  gap-10 m-4  ">
         <div className="">
           <img
