@@ -6,6 +6,7 @@ export default function Home() {
       <div className="text-black items-center text-center underline text-4xl my-2 font-semibold">
         <h5> Our Products </h5>
       </div>
+
       <PizzaList />
     </div>
   );

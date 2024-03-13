@@ -8,7 +8,7 @@ import {
   createRoutesFromElements,
 } from "react-router-dom";
 import Cart from "./pages/Cart";
-import Order from "./pages/Order";
+// import Order from "./pages/Order";
 import Admin from "./componets/Admin";
 import Cheakout from "./componets/Cheakout";
 import ProductDeatils from "./componets/ProductDeatils";

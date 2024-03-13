@@ -1,7 +1,6 @@
 import { useState, useEffect } from "react";
-import getpizzalist from "../utilti/api.js";
 import { Link } from "react-router-dom";
-
+import { getpizzalist } from "../utilti/api.js";
 export default function PizzaList() {
   const [products, setproducts] = useState();
   useEffect(() => {
@@ -14,6 +13,24 @@ export default function PizzaList() {
   }, []);
   return (
     <div className=" container">
+      <div className=" flex  grid-col  gap-10 mb-5 font-semibold text-blue-500">
+        <label>
+          <input type="checkbox" value={false}></input>
+          Clothes
+        </label>
+        <label>
+          <input type="checkbox" value={false}></input>
+          Mobile
+        </label>
+        <label>
+          <input type="checkbox" value={false}></input>
+          Elecroes
+        </label>
+        <label>
+          <input type="checkbox" value={false}></input>
+          Pizza
+        </label>
+      </div>
       <div className="grid grid-cols-4 gap-4">
         {products?.map((product) => (
           <Link
